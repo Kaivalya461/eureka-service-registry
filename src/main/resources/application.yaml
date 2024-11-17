@@ -22,4 +22,4 @@ eureka:
     # Commented out fetch-registry property as it causes issue with SpringBootAdmin integration.
 #    fetch-registry: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: https://${eureka.instance.hostname}/eureka/
