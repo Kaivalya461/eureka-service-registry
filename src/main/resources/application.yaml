@@ -5,6 +5,9 @@ spring:
     admin:
       #Spring Boot Admin Page is accessible on "/sba/dashboard".
       context-path: /sba/dashboard
+  ## Spring Cloud Config configuration
+  config:
+    import: "optional:configserver:http://config-server.kvhome.in"
 
 ## Server Port
 server:
