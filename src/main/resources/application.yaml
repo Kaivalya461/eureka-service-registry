@@ -20,6 +20,7 @@ eureka:
 #    hostname: localhost
     hostname: service-registry.kvhome.in
     instanceId: client-${random.uuid}
+    prefer-ip-address: true
   client:
     register-with-eureka: true
     # Commented out fetch-registry property as it causes issue with SpringBootAdmin integration.
